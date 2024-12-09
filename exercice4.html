@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+import { mergeInfo } from './utils.js';
+
+const personalInfo = { firstName: "John", lastName: "Doe" };
+const contactInfo = { email: "john.doe@example.com", phone: "123-456-7890" };
+
+const combinedInfo = mergeInfo(personalInfo, contactInfo);
+console.log(combinedInfo);
+// { firstName: "John", lastName: "Doe", email: "john.doe@example.com", phone: "123-456-7890" }
+
+
+    </script>
+</body>
+</html>

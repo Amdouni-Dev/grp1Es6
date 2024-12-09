@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const students = [
+  { name: "Alice", grade: 12 },
+  { name: "Bob", grade: 8 },
+  { name: "Charlie", grade: 15 }
+];
+
+const getPassedStudents = (students) => 
+  students.filter(student => student.grade >= 10).map(student => student.name);
+
+const passedStudents = getPassedStudents(students);
+console.log(passedStudents); // ["Alice", "Charlie"]
+
+const [firstPassed] = passedStudents;
+console.log(firstPassed); // Alice
+
+
+    </script>
+</body>
+</html>
